@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Cadastro de vendas "
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btCadastroCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Cadastrar Cliente"
+        app:icon="@drawable/ic_action_name" />
+
+    <Button
+        android:id="@+id/btCadastroVendedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Cadastrar Vendedor"
+        app:icon="@drawable/ic_action_name" />
+
+    <Button
+        android:id="@+id/btCadastroItens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Cadastrar Itens"
+        app:icon="@android:drawable/ic_menu_add" />
+
+    <Button
+        android:id="@+id/btCadastroPedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Cadastrar Pedidos"
+        app:icon="@drawable/ic_action_name" />
+
+
+</LinearLayout>

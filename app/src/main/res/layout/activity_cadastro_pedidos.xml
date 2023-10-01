@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cadastro_pedidos"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione um Cliente:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione um Item de Venda:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerItensVenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextValorUnitario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor Unitário"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnAdicionarItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Item"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Itens Adicionados:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/listViewItensPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvValorTotalItens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total dos Itens: R$0.00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Condição de Pagamento:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCondicaoPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonAVista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="À Vista" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAPrazo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="À Prazo" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextQuantidadeParcelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade de Parcelas"
+        android:inputType="number"
+        android:layout_marginTop="8dp" />
+
+    <ListView
+        android:id="@+id/listViewParcelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvValorTotalPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor Total do Pedido: R$0.00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnConcluirPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Concluir Pedido"
+        android:layout_marginTop="16dp" />
+
+
+
+
+
+
+</LinearLayout>
